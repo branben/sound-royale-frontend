@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Routes, Route } from 'react-router-dom';
 import { ThemeProvider, StyledEngineProvider } from '@mui/material/styles';
 import questTheme from 'src/MyDesignSystemLightTheme';
 import Web from 'src/components/Web/Web';
@@ -20,33 +20,6 @@ function App() {
 const tracks = {};
 
 
-const [rooms, setRooms] = useState([]);
-const [roomTracks, setRoomTracks] = useState(tracks);
-const [AllTracks, setAllTracks] = useState([])
-const [roomID, setRoomID] = useState([])
-
-
-// rooms.forEach((room) => (tracks[room.id])
-
-function updatingTracksForRoom(roomID, trackID, track){
-  roomTracks[roomID].push({
-    trackID, track
-  });
-  setRoomTracks({ ...roomTracks})
-}
-
-
-useEffect(() => {
-  axios
-    .get(`${API}/tracks`)
-    .then((response) => {
-      console.log(response);
-      setAllTracks(response.data);
-    })
-    .catch((err) => {
-      console.log(err);
-    });
-}, [API]);
 
 useEffect(() => {
   axios
@@ -68,7 +41,7 @@ useEffect(() => {
           <Route path='/about' element={<AboutUs/>}/>
           <Route path='/rooms' element={<Rooms  />}/>
           <Route path="/rooms/new" element={<NewRoomForm />} />
-          <Route path="/rooms/:id" element={<RoomDetails updatingTracksForRoom={updatingTracksForRoom} roomTracks={roomTracks} />}/>
+          <Route path="/rooms/:id" element={<RoomDetails />}/>
           <Route path="/tracks" element={<Tracks/>}/>
           <Route path="/tracks/new" element={<NewTrack/>}/>
           <Route path="/tracks/:id" element={<Track/>}/>

@@ -2,13 +2,13 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import Room from "./Room";
 import NavigationBar from "./NavBar/NavBar";
-import { useLocation, useNavigate } from "react-router-dom";
+
 
 const API = process.env.REACT_APP_API_URL;
 
 const Rooms = ({updatingTracksForRoom, roomTracks}) => {
   const [rooms, setRooms] = useState([]);
-  const [roomid, setRoomID] = useState({})
+
  
 
 

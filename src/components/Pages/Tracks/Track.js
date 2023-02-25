@@ -5,7 +5,7 @@ import axios from "axios";
 const Track = ({ track }) => {
 
 
-  const [selectedTrack, setSelectedTrack] = useState({});
+
 
 
 const API = process.env.REACT_APP_API_URL;
@@ -21,11 +21,7 @@ function handleDelete(e) {
     });
 }
 
-useEffect(() => {
-  axios.get(`${API}/tracks/${id}`).then((res) => {
-    setSelectedTrack(res.data);
-  });
-}, [API, id]);
+
 
 
   return (
