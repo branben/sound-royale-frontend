@@ -1,0 +1,15 @@
+.main-form{
+    /* display: grid; */
+/* display: inline-block; */
+/* display: table-caption; */
+/* text-align: center; */
+text-align: -webkit-center;
+    border: groove;
+}
+
+
+.form-input{
+display: table-caption;
+font-size: x-large;
+
+}

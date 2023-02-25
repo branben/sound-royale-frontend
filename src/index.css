@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +12,97 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+a {
+  color: currentcolor;
+text-decoration: none;
+}
+
+.data {
+  grid-area: 1 / 3 / 5 / 6;
+        height: 100vh;
+        overflow-y: auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+}
+
+.info {
+  grid-template-rows: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  justify-items: center;
+  column-gap: 40px;
+}
+
+.track-container{
+ 
+  overflow-y: auto;
+}
+
+.track-card{ 
+  padding: 2em;
+  text-align: center;
+  width: 70%;
+  border: double;
+  text-align: -webkit-center;
+  margin: 30px;
+
+    background: linear-gradient(298deg, #bbbbbb, #ff9c9c, #f1daf1, #7351fb, #ff4b4b);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: AnimationName 32s ease infinite;
+    -moz-animation: AnimationName 32s ease infinite;
+    animation: AnimationName 32s ease infinite;
+}
+
+.room-cards {
+  padding: 2em;
+  
+  width: 70%;
+  border: double;
+ 
+    background: linear-gradient(298deg, #bbbbbb, #ff9c9c, #f1daf1, #7351fb, #ff4b4b);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: AnimationName 32s ease infinite;
+    -moz-animation: AnimationName 32s ease infinite;
+    animation: AnimationName 32s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:45% 0%}
+    50%{background-position:56% 100%}
+    100%{background-position:45% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:45% 0%}
+    50%{background-position:56% 100%}
+    100%{background-position:45% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:45% 0%}
+    50%{background-position:56% 100%}
+    100%{background-position:45% 0%}
+}
+
+.title {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.edit-form-handle{
+  text-align: -webkit-center;
+  border: groove;
+}
+
+.edit-form{
+  display: table-caption;
+  font-size: x-large;
 }
