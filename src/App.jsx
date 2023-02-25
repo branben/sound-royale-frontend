@@ -21,17 +21,7 @@ const tracks = {};
 
 
 
-useEffect(() => {
-  axios
-    .get(`${API}/rooms`)
-    .then((response) => {
-      console.log(response);
-      setRooms(response.data);
-    })
-    .catch((err) => {
-      console.log(err);
-    });
-}, [API]);
+
 
   return (
     <StyledEngineProvider injectFirst>
