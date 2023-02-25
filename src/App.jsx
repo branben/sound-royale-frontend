@@ -15,9 +15,7 @@ import EditTrack from "../src/components/Pages/Tracks/EditTrack"
 
 function App() {
 
-  const API = process.env.REACT_APP_API_URL;
 
-const tracks = {};
 
 
 
