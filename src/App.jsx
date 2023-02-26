@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Routes, Route } from 'react-router-dom';
 import { ThemeProvider, StyledEngineProvider } from '@mui/material/styles';
 import questTheme from 'src/MyDesignSystemLightTheme';
@@ -9,7 +9,6 @@ import NewRoomForm from './components/Pages/NewRoom/NewRoom';
 import RoomDetails from "../src/components/Pages/RoomCreate/RoomDetails"
 import NewTrack from "../src/components/Pages/Tracks/NewTrack"
 import Track from "../src/components/Pages/Tracks/Track"
-import axios from 'axios';
 import Tracks from './components/Pages/Tracks/Tracks';
 import EditTrack from "../src/components/Pages/Tracks/EditTrack"
 
