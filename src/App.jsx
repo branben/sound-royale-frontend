@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Routes, Route } from 'react-router-dom';
 import { ThemeProvider, StyledEngineProvider } from '@mui/material/styles';
-import questTheme from 'src/MyDesignSystemLightTheme';
+import questTheme from '../src/MyDesignSystemLightTheme';
 import Web from 'src/components/Web/Web';
 import AboutUs from './components/Pages/About/src/components/AboutUs/AboutUs';
 import Rooms from './components/Pages/Rooms';
