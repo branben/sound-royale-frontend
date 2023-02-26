@@ -37,7 +37,7 @@ const RoomDetails = () => {
         navigate("/404");
         console.error("catch", c);
       });
-  }, []);
+  });
 
   function handleSubmit(e) {
     e.preventDefault();
