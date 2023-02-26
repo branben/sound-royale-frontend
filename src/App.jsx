@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { ThemeProvider, StyledEngineProvider } from '@mui/material/styles';
 import questTheme from '../src/MyDesignSystemLightTheme';
 import Web from 'src/components/Web/Web';
@@ -13,13 +13,6 @@ import Tracks from './components/Pages/Tracks/Tracks';
 import EditTrack from "../src/components/Pages/Tracks/EditTrack"
 
 function App() {
-
-
-
-
-
-
-
   return (
     <StyledEngineProvider injectFirst>
       <ThemeProvider theme={questTheme}>
