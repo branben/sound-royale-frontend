@@ -25,10 +25,10 @@ const Rooms = ({updatingTracksForRoom, roomTracks}) => {
   }, []);
 
  
- console.log(roomid)
+ console.log()
   return (
     <div className="Rooms">
-      <NavigationBar roomid={roomid}/>
+      <NavigationBar />
       <header>
       
         <h3 className="title">Room List</h3>
@@ -37,7 +37,6 @@ const Rooms = ({updatingTracksForRoom, roomTracks}) => {
         <ul className="info">
           {rooms.map((room) => (
             <li className="room-cards" key={room.id}>
-              {/* {setRoomID(room.id)} */}
               <Room key={room.id} room={room} updatingTracksForRoom={updatingTracksForRoom} roomTracks={roomTracks} />
             </li>
           ))}

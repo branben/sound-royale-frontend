@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import NavigationBar from "../NavBar/NavBar";
 import "./NewRoom.css";
-import Rooms from "../Rooms";
+
 
 const API = process.env.REACT_APP_API_URL;
 

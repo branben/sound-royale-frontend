@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { Link, useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import RoomNavBar from "../NavBar/RoomNavBar";
 
 const API = process.env.REACT_APP_API_URL;
@@ -51,12 +51,7 @@ const RoomDetails = () => {
       });
   }
 
-  const [userSelect, setUserSelect] = useState("");
-
-  function handleSelectChange(e) {
-    setUserSelect(e.target.value);
-  }
-
+  console.log(tracks.id)
 
   return (
     <div className="container">
@@ -68,8 +63,7 @@ const RoomDetails = () => {
         </div>
         <div className="tracks-list-container">
           <form onSubmit={handleSubmit}>
-            <select  onChange={handleSelectChange}
-        value={userSelect}>
+            <select>
               {tracks.map((track) => {
                 return <option value={track.id}>{track.title}</option>;
               })}

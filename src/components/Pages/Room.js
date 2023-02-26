@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Track from "../Pages/Tracks/Track"
 
-const Room = ({ room, updatingTracksForRoom, roomTracks}) => {
+
+const Room = ({ room}) => {
 
 
 
